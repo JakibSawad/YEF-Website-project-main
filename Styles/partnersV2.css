@@ -53,158 +53,120 @@ body {
   color: aliceblue;
 }
 
-/* Team Leaders 2020-2021 */
+/* Econ-reads-intro */
 
-#about-panel h1 {
+#econ-reads img{
+    width: 130px;
+    height: auto;
+}
+
+#econ-reads p{
+    position: relative;
+    top: 43px;
+    text-align: justify ;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+
+/* Trending Slider*/
+
+#econ-blogs h1 {
   margin-top: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: 600;
+
 }
 
-#about-panel h2 {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 400;
-}
-
-#about-panel p {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.leader {
+.blogs {
   color: #fb9c1c;
 }
 
-/* Leader profiles */
-.profile {
-  padding: 0 0;
-  padding-top: 30px;
+.slider-main{
+    border-radius: 5px; 
+    background-color:#fff6ea;
 }
 
-.profile h3 {
-  color: #fb9c1c;
-  font-family: "Hurricane", cursive;
+.blog-details{
+    padding: 30px;
+    text-align: justify;
 }
 
-.cover img {
-  height: 200px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 100%;
+.multi-blog h1{
+    margin-top: 50px;
 }
 
-.profile-photo img {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  width: 140px;
-  height: 140px;
+.author img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+
+
+.modal-btn{
+    margin-bottom: 10px;
+}
+
+
+/* line */
+
+hr:not([size]) {
+    height: 2px;
+}
+
+.line{
+    height: 3px;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+}
+
+.intro-line{
+    height: 3px;
+    position: relative;
+    bottom: 30px;
+    border-radius: 10px;
+}
+
+
+/* OCH carousel- Owl carousel */
+
+.owl-dots {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.owl-dot {
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
-  border: 5px solid #ffff;
-}
-
-.profile-photo:hover img {
-  border-color: #16354a;
-  transition: 0.7s;
-}
-
-.main-text {
-  padding: 30px 0;
-  text-align: center;
-}
-
-.main-text h2 {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 20px;
-  margin: 0 0 10px;
-}
-.main-text h3 {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 15px;
-}
-
-.main-text p {
-  font-size: 15px;
-  padding: 0 35px;
-}
-
-.profile-card {
-  margin-bottom: 25px;
-}
-
-.socials i {
-  color: #16354a;
-  font-size: 25px;
-}
-
-.socials i:hover {
-  color: #fb9c1c;
-}
-
-#iframe-video iframe {
-  width: -webkit-fill-available;
-}
-
-.leader-video p {
-  text-align: justify;
-}
-
-.leader-video {
-  margin-bottom: 25px;
-}
-/* Archive Button */
-.archive-btn {
-  text-decoration: none;
-  color: black;
-}
-
-.btn {
-  background: none;
-  border: 2px solid #fb9c1c;
-  border-radius: 50px;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  padding: 12px 20px;
-  min-width: 150px;
-  margin: 10px;
   cursor: pointer;
-  transition: color 0.4s linear;
-  position: relative;
-}
-.btn:hover {
-  color: #fff;
-}
-
-.btn:hover a {
-  color: white;
+  outline: none;
+  margin: 0 5px;
+  border: 1px solid #16354a !important;
+  transition: all 0.3s ease;
 }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #fb9c1c;
-  z-index: -1;
-  transition: transform 0.5s;
-  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-#archive-bg::before {
-  transform: scaleX(0);
-  border-radius: 15px;
+.owl-dot:hover,
+.owl-dot:active {
+  background: #16354a !important;
 }
 
-#archive-bg:hover::before {
-  transform: scaleX(1);
+.owl-carousel .owl-item .author img {
+    display: block;
+    height: auto;
+    width: 50px;
 }
+
+
 
 /* Footer Section */
 .footer-logo img {
@@ -325,13 +287,33 @@ footer {
   margin-top: 10px;
 }
 
-@media all and (max-width: 480px) {
-  #nav-yef-logo {
-    position: relative;
-    right: 75px;
-  }
+.partner {
+  align-items: center;
+  
+  transition: border-color 0.7s; 
 
-  .leader-video {
-    margin-bottom: -100px;
-  }
 }
+
+.partner:hover {
+  border-color: #fb9c1c;
+}
+
+
+
+
+@media all and (max-width: 480px) {
+        #econ-reads{
+            display: flex;
+            flex-direction: column;
+        }
+        #econ-reads img{
+            position: relative;
+            right: 18px;
+        }
+        
+        #econ-reads p{
+            position: relative;
+            top: -20px;
+        }
+
+} 
